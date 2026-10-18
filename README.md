@@ -12,8 +12,8 @@ Most skill checks validate frontmatter and file structure. `skill-trigger-bench`
 
 ```bash
 python -m pip install git+https://github.com/fur-lab/skill-trigger-bench.git
-skill-trigger-bench validate examples/csv-summary/SKILL.md --cases examples/csv-summary/trigger-cases.json
-skill-trigger-bench run examples/csv-summary/SKILL.md --cases examples/csv-summary/trigger-cases.json
+skill-trigger-bench validate path/to/SKILL.md --cases path/to/trigger-cases.json
+skill-trigger-bench run path/to/SKILL.md --cases path/to/trigger-cases.json
 ```
 
 Run straight from a checkout:
