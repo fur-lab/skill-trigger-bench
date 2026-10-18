@@ -11,7 +11,7 @@ Most skill checks validate frontmatter and file structure. `skill-trigger-bench`
 ## Quick start
 
 ```bash
-python -m pip install skill-trigger-bench
+python -m pip install git+https://github.com/fur-lab/skill-trigger-bench.git
 skill-trigger-bench validate examples/csv-summary/SKILL.md --cases examples/csv-summary/trigger-cases.json
 skill-trigger-bench run examples/csv-summary/SKILL.md --cases examples/csv-summary/trigger-cases.json
 ```
@@ -60,7 +60,7 @@ The score is the proportion of meaningful prompt words that also occur in the sk
 
 ## GitHub Actions
 
-Copy [`.github/workflows/skill-trigger-bench.yml`](.github/workflows/skill-trigger-bench.yml) into your repository or use this repository's workflow as a template. Change the `skill` and `cases` paths for each skill.
+Copy [`.github/workflows/skill-trigger-bench.yml`](.github/workflows/skill-trigger-bench.yml) into your repository. Change the `skill` and `cases` paths for your own skills. The workflow installs this CLI directly from GitHub and runs the annotated boundary cases on every push and pull request.
 
 ## Development
 
