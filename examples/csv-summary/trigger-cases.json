@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "id": "csv-summary-request",
+      "prompt": "Summarize CSV data and calculate basic statistics",
+      "should_trigger": true
+    },
+    {
+      "id": "tabular-analysis",
+      "prompt": "Analyze CSV files and tabular datasets",
+      "should_trigger": true
+    },
+    {
+      "id": "pdf-extraction",
+      "prompt": "Extract text and tables from a PDF document",
+      "should_trigger": false
+    },
+    {
+      "id": "web-deployment",
+      "prompt": "Build and deploy a web application",
+      "should_trigger": false
+    }
+  ]
+}

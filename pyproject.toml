@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skill-trigger-bench"
+version = "0.1.0"
+description = "Offline boundary smoke tests for Agent Skill trigger descriptions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Rafli"}]
+dependencies = ["PyYAML>=6.0"]
+keywords = ["agent-skills", "skills", "trigger-testing", "claude-code", "codex"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+skill-trigger-bench = "skill_trigger_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
